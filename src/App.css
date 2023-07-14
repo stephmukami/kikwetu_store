@@ -1,0 +1,14 @@
+.navbar{
+    border:1px solid red;
+  }
+  img{
+    width:100px;
+    height: 100px;
+  }
+  .card{
+    border: 1px solid salmon ;
+  }
+  
+  .checkout-item-container{
+    border: 1px solid blue ;
+  }
