@@ -13,22 +13,34 @@ export default function Item({products,addtoCart}){
     }
     const checkoutBtn = (
         <Link to="/checkout">
-        <button>Proceed to Checkout</button>
+        <button className='checkout-btn'>Proceed to Checkout</button>
     </Link>
     )
     return(
         <>
-        <h1>Item PAGE</h1>
-        <h3>Item {id}</h3>
-        <div key={item.id} className='item-continer'>
-            <img src={item.image} alt="" />
-            <p> Title: {item.title}</p>
-            <p> Description: {item.description}</p>
-            <button onClick={handleAddtoCart}>Add to cart</button>
-           {showCheckout?checkoutBtn:null}
-           <Link to="/shop">
-        <button>Back</button>
-    </Link>
+        <div className='ittem'>
+        <h4  className='tagline'>Checkout the product !!</h4>
+        <div key={item.id} className='item-parent'>
+
+            <div className='item-image'>
+                 <img src={item.image} alt="" />
+            </div>
+
+            <div className='item-text'>
+                    <p className='item-title'>  {item.title}</p>
+                    <p className='item-desc'>{item.description}</p>
+
+                    <div className='item-btns'>
+                            <button className='add-btn' onClick={handleAddtoCart}>Add to cart</button>
+                                {showCheckout?checkoutBtn:null}
+                            <Link to="/shop">
+                                    <button className='item-back-btn'>Back</button>
+                            </Link>
+                    </div>
+               
+            </div>
+
+        </div>
         </div>
         </>
     )
