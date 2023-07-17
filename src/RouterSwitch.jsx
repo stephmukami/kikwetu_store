@@ -8,7 +8,6 @@ import Item from "./components/Item";
 import {products} from './components/ProductCatalog'
 
 
-import App from "./App";
 
 export default function RouterSwitch({ increaseAmount,decreaseAmount,onQuantityChange,addtoCart,removeFromCart,selected}){
     return (
