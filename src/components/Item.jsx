@@ -18,7 +18,7 @@ export default function Item({products,addtoCart}){
     )
     return(
         <>
-        <div className='ittem'>
+        <div className='item-cont'>
         <h4  className='tagline'>Checkout the product !!</h4>
         <div key={item.id} className='item-parent'>
 

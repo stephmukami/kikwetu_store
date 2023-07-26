@@ -4,6 +4,7 @@ import {products} from './ProductCatalog'
 export default function Shop(){
     return(
         <>
+        <div className='shop-parent'>
         <div className='shop-title'>
         <h1>HAPPY SHOPPING !!🎉</h1>
 
@@ -31,6 +32,7 @@ export default function Shop(){
 
           );
         })}
+        </div>
         </div>
         </>
     )
